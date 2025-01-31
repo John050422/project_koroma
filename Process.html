@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo App</title>
+    <script src="index1.js" defer></script>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        place-content: center;
+        place-items: center;
+      }
+
+      #todo-card {
+        display: flex;
+        width: 60%;
+        background-color: red;
+        height: 80%;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #card-title {
+        margin-inline: auto;
+      }
+
+      #todo-input {
+        width: 80%;
+      }
+
+      #add-button {
+        align-self: flex-start;
+        margin-left: 10%;
+        margin-top: 1rem;
+      }
+
+      #todo-item {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        padding-block: 0.5em;
+      }
+
+      #todo-listing {
+        align-self: flex-start;
+        margin-left: 10%;
+        margin-top: 1em;
+        width: 100%;
+        width: 90%;
+        flex-direction: column;
+        overflow-y: scroll;
+        scrollbar-width: 2px;
+        scrollbar-color: blue;
+        height: 25em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="todo-card">
+      <h1 id="card-title">TO DO LIST</h1>
+      <input id="todo-input" type="text" placeholder="Enter todo...." />
+      <button id="add-button">Add task</button>
+      <div id="todo-listing"></div>
+    </div>
+  </body>
+</html>
