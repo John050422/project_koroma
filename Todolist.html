@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body{
+            background-color: black;
+        }
+        #modal {
+            background-color: aliceblue;
+            margin-left: 250px;
+            margin-top: 100px;
+            width: 550px;
+            padding: 20px 20px;
+            font-size: 20px;
+        }
+
+        #Name {
+            margin-left: 63px;
+        }
+
+        #Email {
+            margin-left: 65px;
+        }
+
+        #Subject {
+            margin-left: 70px;
+        }
+
+        button {
+            margin-left: 85px;
+        }
+
+        #send {
+            width: 370px;
+            text-align: left;
+            background-color: white;
+            height: 30px ;
+            border-radius: 3px;
+            margin-left: 110px;
+        }
+
+        #cancel {
+            margin-left: 15rem;
+            color: black;
+             display: flex; 
+             margin-inline: -5remu;
+        }
+        input{
+            margin-left: 10px;
+            width: 350px;
+            height: 20px;
+        }
+        #button-text{
+            background-color: rgb(95, 152, 252);
+            color: rgb(248, 249, 249);
+            border: none;
+            width: 80px;
+            height: 20px;
+            border-radius: 3px;
+        }
+    </style>
+    <title> To do app</title>
+
+<body>
+    <div id="modal">
+        <div id="modal-content">
+            <div id="Name"> <label>Name</label> <input type="text" placeholder="TODO LIST"></div> <br>
+            <div id="Email"> <label for="Email">Email</label> <input type="text" placeholder="ENTER EMAIL"> </div> <br>
+            <div id="Before"><label for="Before Subject">Before Subject</label> <input type="text"  style="margin-left: 18px;"
+                    placeholder="Before Subject"></div><br>
+            <div id=" Subject"><label for="After Subject"></label> After Subject<input type="text" style="margin-left: 28px;"></div> <br>
+            <button id="send">Send</button> <br><br>
+            <div id="cancel"><button>Cancel</button> <button id="button-text">OK</button></div>
+        </div>
+    </div>
+
+</body>
+</head>
+
+</html>
